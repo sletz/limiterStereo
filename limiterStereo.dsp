@@ -153,16 +153,16 @@ limiterStereo(xL_, xR_) =
                                         .01, 
                                         .001, 
                                         .05, 
-                                        .001)) : si.smoo;
+                                        .001)); // : si.smoo;
         hold = controlGroup(hslider("[04]Hold (s)", 
                                     .05, 
                                     .000, 
                                     1, 
-                                    .001)) : si.smoo;
+                                    .001)); // : si.smoo;
         release = controlGroup(hslider( "[05]Release (s)", 
                                         .15, 
                                         .05, 
                                         1, 
-                                        .001)) : si.smoo;
+                                        .001)); // : si.smoo;
     };
 process = limiterStereo;
